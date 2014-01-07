@@ -11,7 +11,7 @@ module Gyazo
         data = request[:imagedata][:tempfile].read
         image = Image.new(options.root, id, data)
 
-        "http://#{settings.host}/data/#{image.hash}.png"
+        "http://#{settings.host}:#{settings.port}/data/#{image.hash}.png"
       end
 
     end

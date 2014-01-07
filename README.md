@@ -21,9 +21,9 @@ Run
 
 Running Option
 
-`-p`, `--port=` Service binding port
-`-b`, `--bind-address=` Service binding address
-`-h`, `--host=` Gyazo Server access domain
+ - `-p`, `--port=` Service binding port
+ - `-b`, `--bind-address=` Service binding address
+ - `-h`, `--host=` Gyazo Server access domain
 
 ## Contributing
 

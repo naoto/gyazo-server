@@ -1,24 +1,29 @@
 # Gyazo::Server
 
-TODO: Write a gem description
+Gyazo Server
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's github:
 
-    gem 'gyazo-server'
+    git clone https://github.com/naoto/gyazo-server.git
 
 And then execute:
 
-    $ bundle
+    $ bundle install --path vendor/bundle
 
-Or install it yourself as:
 
-    $ gem install gyazo-server
+Run
+
+    $ bundle exec ruby bin/gyazo-server
 
 ## Usage
 
-TODO: Write usage instructions here
+Running Option
+
+`-p`, `--port=` Service binding port
+`-b`, `--bind-address=` Service binding address
+`-h`, `--host=` Gyazo Server access domain
 
 ## Contributing
 

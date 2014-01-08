@@ -14,6 +14,10 @@ module Gyazo
         "http://#{options.host}/data/#{image.hash}.png"
       end
 
+      get '/' do
+        send_file File.join(settings.public_folder, 'index.html')
+      end
+
     end
   end
 end

@@ -7,9 +7,9 @@ Gem::Specification.new do |spec|
   spec.name          = "gyazo-server"
   spec.version       = Gyazo::Server::VERSION
   spec.authors       = ["Naoto SHINGAKI"]
-  spec.email         = ["nao.sora+github@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.email         = ["n.shingaki@gmail.com"]
+  spec.summary       = %q{Gyazo Server}
+  spec.description   = %q{Gyazo Server}
   spec.homepage      = ""
   spec.license       = "MIT"
 

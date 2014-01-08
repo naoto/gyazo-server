@@ -11,10 +11,14 @@ module Gyazo
 
     def self.run(args)
       options = Options.new(args)
-      options[:host] ||= Socket.getifaddrs.select{|x|
-          x.name == "eth0" and x.addr.ipv4?
-      }.first.addr.ip_address
+      options[:port] ||= "4567"
+      options[:host] ||= [Socket.getifaddrs.select{|x|
+                            x.name == "eth0" and x.addr.ipv4?
+                          }.first.addr.ip_address,
+                          ":",
+                          options[:port]].join
       WebServer.run!(options)
     end
+
   end
 end

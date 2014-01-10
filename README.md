@@ -2,7 +2,7 @@
 
 Gyazo Server
 
-Inspier the https://github.com/send/gyazo-sinatra
+Inspire the https://github.com/send/gyazo-sinatra
 
 ## Installation
 

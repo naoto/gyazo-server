@@ -2,18 +2,20 @@
 
 Gyazo Server
 
+Inspire the https://github.com/send/gyazo-sinatra
+
 ## Installation
 
 Add this line to your application's github:
 
     git clone https://github.com/naoto/gyazo-server.git
 
-And then execute:
+And then Setup:
 
     $ bundle install --path vendor/bundle
 
 
-Run
+And the Run
 
     $ bundle exec ruby bin/gyazo-server
 
@@ -24,6 +26,12 @@ Running Option
  - `-p`, `--port=` Service binding port
  - `-b`, `--bind-address=` Service binding address
  - `-h`, `--host=` Gyazo Server access domain
+
+## Example
+
+ ```shell
+ $bundle exec ruby bin/gyazo-server -p 8888 -b 0.0.0.0 -h example.com:80
+ ```
 
 ## Contributing
 

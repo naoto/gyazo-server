@@ -8,10 +8,17 @@ module Gyazo
 
       post '/' do
         id = request[:id]
-        data = request[:imagedata][:tempfile].read
-        image = Image.new(options.root, id, data)
-
-        "http://#{options.host}/data/#{image.hash}.png"
+        if !request[:imagedata].nil?
+          data = request[:imagedata][:tempfile].read
+          image = Image.new(settings.root, id, data)
+          return "http://#{settings.host}/data/#{image.hash}.png"
+        elsif !request[:data].nil?
+          data = request[:data][:tempfile].read
+          movie = Movie.new(settings.root, id, data)
+          return "http://#{settings.host}/data/#{movie.hash}.gif"
+        else
+          return "http://#{settings.host}/"
+        end
       end
 
       get '/' do

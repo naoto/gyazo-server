@@ -4,6 +4,11 @@ Gyazo Server
 
 Inspire the https://github.com/send/gyazo-sinatra
 
+## Requirements
+
+ - FFmpeg
+ - GraphicsMagick
+
 ## Installation
 
 Add this line to your application's github:

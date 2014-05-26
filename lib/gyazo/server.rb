@@ -6,6 +6,7 @@ module Gyazo
     require 'gyazo/server/options'
     require 'gyazo/server/webserver'
     require 'gyazo/server/image'
+    require 'gyazo/server/movie'
 
     require 'socket'
 

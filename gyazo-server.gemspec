@@ -24,5 +24,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'sinatra'
   spec.add_runtime_dependency 'sdbm'
   spec.add_runtime_dependency 'puma'
+  spec.add_runtime_dependency 'mini_magick'
 
 end
